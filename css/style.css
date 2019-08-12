@@ -21,6 +21,10 @@ h2 {
   text-transform: uppercase;
 }
 
+a:link {
+  color: black !important;
+}
+
 /*navigation*/
 
 .navbar {
