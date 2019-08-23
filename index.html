@@ -12,12 +12,15 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pompiere&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <!-- font awesome -->
   <script src="https://kit.fontawesome.com/697f0f5859.js"></script>
 
 </head>
+<body data-spy="scroll" data-target="navbarResponsive">
 
-<body class="container-fluid d-flex flex-column grow">
+
 
 <!--- navigation -->
   <nav class="navbar navbar-expand-lg sticky-top">
@@ -48,16 +51,29 @@
 <!--- end navigation -->
 
 <!-- home -->
+<div id="home">
 
-  <div id="home" class="row">
     <div class="col-12">
-      <p class="lead">A Geographer who decided to take a learning sabbatical to switch careers. I attended two bootcamps; Flatiron School for Ruby and General Assembly for JavaScript and React. I have a growth mindset and am looking forward to starting my career as a developer. </p>
+      <p class="lead">I used to make maps - now I code! I am a developer with experience harnessed from a learning sabbatical I took to change careers. I attended Flatiron School and General Assembly where I learned relevant and modern web development techniques. I have a growth mindset and am highly motivated! I enjoy an environment of creativity and collaboration.
     </div>
 
     <div class="col-12">
-      <h3>TECH: Ruby,    Ruby on Rails,    Sinatra,    JavaScript,    ReactJS,    Git</h3>
+      <div class="icons">
+
+      <i class="devicon-ruby-plain-wordmark colored"></i>
+      <i class="devicon-rails-plain-wordmark colored"></i>
+      <i class="devicon-javascript-plain colored"></i>
+      <i class="devicon-nodejs-plain-wordmark colored"></i>
+      <i class="devicon-react-original-wordmark colored"></i>
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+      <i class="devicon-css3-plain-wordmark colored"></i>
+      <i class="devicon-html5-plain-wordmark colored"></i>
+      <i class="devicon-git-plain-wordmark colored"></i>
+
+      </div>
     </div>
-  </div>
+
+</div>
 
 <!-- end home -->
 
@@ -112,7 +128,7 @@
             <img class="card-img-top" src="img/movies.png" alt="Card image cap">
               <div class="card-body">
                 <h4 class="card-title">Rails Movie Review</h4>
-                <p class="card-text">Ruby on Rails app for reviewing and rating movies. A user can sign in, add a movie and rate it.</p>
+                <p class="card-text">Ruby on Rails app using MVC framework for reviewing and rating movies. A user can sign in, add a movie and rate it.</p>
                 <a href="https://github.com/SaraMSchwarz/Rails_MovieReviewApp" class="card-link"><i class="fab fa-github"></i></a>
               </div>
           </div>
@@ -141,52 +157,93 @@
               </div>
           </div>
         </div>
+      </div>
     </div>
+  </div>
 
 <!-- end portfolio grid -->
 
 <!-- resume -->
-<div id="resume" >
+<div id="resume">
 
-  <h2>RESUME</h2>
-  <div class="row">
-    <div class="col-sm-8">
+  <h2 class="resume-heading">RESUME</h2>
+  <!-- <a href="/img/resume.pdf" download="pdf"> -->
+  <div class="container" class="resume-content" style="border:1px solid #cecece;">
+    <div class="row">
+
+
+
+    <div class="col-8">
     <h4>Highlighted Projects</h4>
-      <ul>
-        <li>treelife — website for a local business
-          Developed and implemented a small business website, managed email gateways and migrated all services to a new provider.
-        </li>
-        <li>Weather — weather app built using React
-          A web app built with JavaScript and React. Displays a 5-day weather forecast for a zip code using OpenWeather API.
-        </li>
-        <li>Movie Reviewer — movie review app built with Ruby on Rails
-        A Ruby on Rails web app that allows a user to login, search for movies, and review them.
-        </li>
-      </ul>
 
+        <h6>treelife</h6>
+          Developed and implemented a website for a local business using Bootstrap 4 and JavaScript. Managed email gateways and migrated all services to a new provider.
+
+        <br>
+        <br>
+      <h6>Weather</h6> A weather app built with JavaScript and React. Displays a 5-day weather forecast for a zip code using OpenWeather API.
+
+        <br>
+        <br>
+        <h6>Movie Reviewer</h6>
+        A Ruby on Rails app that allows a user to login, search for movies, and review them. Uses MySQL.
+
+        <br>
+        <br>
       <h4>Work Experience</h4>
+
+        <h6>Airbus — Optical Tasking Engineer / Large Project Coordinator</h6>
+          2012 - 2017 / Chantilly VA
+          <br>
+          Optimized satellite imagery collections for clients in the private business and government sectors. Provided full-cycle management of multi-million-dollar domestic and international technology projects. Delivered technical training to clients and coworkers.
+
+        <br>
+        <br>
+        <h6>Technology Associates International — GIS Analyst III</h6>
+          2011 - 2012 / Washington D.C.
+          A contractor for U.S. Department of Health and Human Services, I worked in the Secretary’s Operation Center producing cartographic products using complex datasets to senior leadership, including the White House.
+
+
+
+    </div>
+
+
+
+<div class="col-4">
+  <div id="tech">
+      <h4>Tech</h4>
       <ul>
-        <li>Airbus — Optical Tasking Engineer / Large Project Coordinator
-2012 - 2017 / Chantilly VA
-Optimized satellite imagery collections for clients in the private business and government sectors. Provided full-cycle management of multi-million-dollar domestic and international technology projects. Delivered technical training to clients and coworkers.
-</li>
-        <li>Technology Associates International — GIS Analyst III
-2011 - 2012 / Washington D.C.
-A contractor for U.S. Department of Health and Human Services, I worked in the Secretary’s Operation Center producing cartographic products using complex datasets to senior leadership, including the White House.
-</li>
-        
+        <li>Ruby</li>
+        <li>Ruby on Rails</li>
+        <li>Sinatra</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Redux</li>
+        <li>jQuery</li>
+        <li>Node.js</li>
+        <li>Git</li>
       </ul>
-
     </div>
-  </div>
+  <h4>Certifications</h4>
+  <ul>
+    <li>Certified Scrum Master (2018)</li>
+    <br>
+    <li>AWS Certified Cloud Practitioner (2018)</li>
+  </ul>
 
-  <div class="row">
-    <div class="col-sm-2">
-  vvvv
+  <h4>Education</h4>
+  <ul>
+    <li>General Assembly - React Development (2019)</li>
+    <br>
+    <li>Flatiron School - Full-Stack Web Development (2018)</li>
+    <br>
+    <li>George Mason University - M.S. in Geographic and Cartographic Sciences (2012)</li>
+  </ul>
     </div>
-  </div>
 
-</div>
+</div><!--  end of row -->
+</div><!--  end of container -->
+</div><!--  end of resume -->
 <!-- end resume -->
 
 
@@ -194,17 +251,23 @@ A contractor for U.S. Department of Health and Human Services, I worked in the S
 
     <footer>
       <div class="row">
-			<div class="col-md-6">
+			<div class="col-4">
+        <div class="social-icons">
 
-				<a href="https://github.com/SaraMSchwarz/"><i class="fab fa-github"></i></a>
-				<a href="https://www.linkedin.com/in/sara-schwarz-csm-9b739a45/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/krouvilla"><i class="fab fa-twitter"></i></i></a>
+				<a class="so-link" href="https://github.com/SaraMSchwarz/"><i class="fab fa-github fa-5x"></i></a>
+        <br>
+        <br>
+				<a class="so-link" href="https://www.linkedin.com/in/sara-schwarz-csm-9b739a45/"><i class="fab fa-linkedin fa-5x"></i></a>
+        <br>
+        <br>
+        <a class="so-link" href="https://twitter.com/krouvilla"><i class="fab fa-twitter fa-5x"></i></i></a>
 				<br>
+      </div>
 
 			</div>
 
-			<div id="contact" class="col-md-6">
-				<h3>Contact Me!</h3>
+			<div id="contact" class="col-md-8">
+				<h3>Contact Me</h3>
 
 					<form id="contact-form" method="post" action="contact.php">
 						<div class="messages"></div>
@@ -228,11 +291,22 @@ A contractor for U.S. Department of Health and Human Services, I worked in the S
 					</form>
 
 			</div>
+      <div class="copyright">
 
-			<hr class="socket">
 			&copy; Copyright - 2019 Sara Schwarz. All rights reserved.
+    </div>
 		</div>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/jquery.counterup.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/waypoints.js"></script>
+<script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -13,11 +13,11 @@ require './PHPMailer-master/vendor/autoload.php';
 */
 
 // an email address that will be in the From field of the email.
-$fromEmail = 'noreply@email.com';
+$fromEmail = 'saramschwarz@gmail.com';
 $fromName = 'No Reply Email';
 
 // an email address that will receive the email with the output of the form
-$sendToEmail = 'name@mydomain.com';
+$sendToEmail = 'saramschwarz@gmail.com';
 $sendToName = 'New Website Email Message';
 
 // subject of the email
@@ -28,7 +28,7 @@ $subject = 'New message from contact form';
 $fields = array('name' => 'Name:', 'email' => 'Email:', 'message' => 'Message:');
 
 // message that will be displayed when everything is OK :)
-$okMessage = 'Successfully submitted - we will get back to you soon!';
+$okMessage = 'Successfully submitted - I will get back to you soon!';
 
 // If something goes wrong, we will display this message.
 $errorMessage = 'There was an error while submitting the form. Please try again later';
@@ -42,9 +42,9 @@ error_reporting(E_ALL & ~E_NOTICE);
 
 try
 {
-    
+
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-    $emailTextHtml .= "<h3>New message from the Nuno Theme:</h3><hr>";
+    $emailTextHtml .= "<h3>Hi from Sara!</h3><hr>";
     $emailTextHtml .= "<table>";
 
     foreach ($_POST as $key => $value) {
@@ -55,13 +55,13 @@ try
     }
     $emailTextHtml .= "</table><hr>";
     $emailTextHtml .= "<p>Have a great day!<br><br>Sincerely,<br><br>Nuno Theme</p>";
-    
+
     $mail = new PHPMailer;
 
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($sendToEmail, $sendToName); // you can add more addresses by simply adding another line with $mail->addAddress();
     $mail->addReplyTo($_POST['email'], $_POST['name']);
-    
+
 
 
     $mail->Subject = $subject;
@@ -69,12 +69,12 @@ try
     $mail->Body = $emailTextHtml;
     $mail->isHTML(true);
     //$mail->msgHTML($emailTextHtml); // this will also create a plain-text version of the HTML email, very handy
-    
-    
+
+
     if(!$mail->send()) {
         throw new \Exception('Email send failed. ' . $mail->ErrorInfo);
     }
-    
+
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
@@ -87,9 +87,9 @@ catch (\Exception $e)
 // if requested by AJAX request return JSON response
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
-    
+
     header('Content-Type: application/json');
-    
+
     echo $encoded;
 }
 // else just display the message

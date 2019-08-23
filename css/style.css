@@ -4,12 +4,17 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+* {
+  border-radius: 0 !important;
+}
+
 [class*="col-"] {
 	padding: 1rem;
 }
 
 h4 {
   font-family: 'Pompiere', cursive;
+  text-align: center;
 }
 
 h3 {
@@ -25,64 +30,151 @@ a:link {
   color: black !important;
 }
 
+ul {
+  list-style: none;
+}
+
+.lead {
+  text-align: center;
+  margin: 2px;
+}
 /*navigation*/
+
+/*--- Nav Scrolling Offset --*/
+.offset:before {
+	height: 4rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
 
 .navbar {
   margin: 1rem;
 	padding: 2rem;
 	text-transform: uppercase;
-	font-size: .9rem;
+	font-size: 1.5rem !important;
 	font-weight: 700;
 	letter-spacing: .1rem;
-  background-color: white;
+  background: #49494b!important;
   font-family: 'Pompiere', cursive;
 }
 .navbar-brand {
-	height: 3rem;
+	font-size: 1.5rem !important;
+  color: white!important;
 }
-.svg-inline--fa.fa-w-14 {
-	color: black;
-	font-size: 1.6rem;
-}
+
 .navbar-nav li {
 	padding-right: .8rem;
 }
 .navbar-nav .nav-link {
-	color: black;
+	color: white;
 	padding-top: .8rem;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-	color: black;
+	color: #FC4A1A;
 }
 
 /*home//about*/
 
+/*icons*/
+
+.icons {
+  font-size: 4.5rem;
+  text-align: center;
+}
+
 #home {
-  margin: 5rem;
-  padding-top: 2.5rem;
+  margin: 1rem;
+  padding-top: 4rem;
 }
 
 
 /*portfolio*/
 
 #portfolio {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 #portfolio h2 {
   text-align: center;
 }
 
+/* resume */
 
-
-/*image styling*/
-img {
-  float: left;
-  /*border-radius: 8px;*/
-  height: auto;
+#resume {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
+#resume.resume-content {
+  border-style: solid;
+}
+
+.resume-heading {
+  text-align: center;
+}
+
+
+
+/* footer and contact */
+
 footer {
-  background-color: grey;
+	background: url('img/image.png') no-repeat;
+	background-size: cover;
+	color: white;
+}
+footer .row {
+	/* background-color: rgba(57, 63, 70, 0.85); */
+  background-color: #49494b;
+	padding: 1rem 2rem 3rem;
+}
+
+footer img {
+	margin: 1.5rem 0;
+}
+
+footer a {
+	color: white;
+}
+
+footer svg.svg-inline--fa {
+	font-size: 3.5rem;
+	margin: 2rem;
+}
+
+footer svg.svg-inline--fa:hover {
+	color: #FC4A1A;!important;
+}
+
+footer h3 {
+	text-transform: uppercase;
+	margin: 1.5rem 0;
+	letter-spacing: .2rem;
+}
+
+.form-group {
+	margin-bottom: 1.3rem;
+}
+
+.form-control {
+	border-radius: 0;
+	border: .15rem solid#white;
+	color: black!important;
+	font-size: 1.1rem;
+}
+
+.form-control:focus {
+	border: .15rem solid #white;
+}
+
+input.btn {
+	cursor: pointer;
+	color: #white;
+}
+
+
+.copyright {
+    font-family:  'Pompiere', cursive;
+    margin-top: 1rem;
 }
